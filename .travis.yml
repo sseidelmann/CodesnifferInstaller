@@ -8,9 +8,9 @@ php:
   - hhvm
   - nightly
 
-before_install:
-  - composer self-update
-
+before_script:
+    - curl -s http://getcomposer.org/installer | php
+    - php composer.phar install  --dev --no-interaction --prefer-source
 
 script:
-  - ./phpunit --configuration ./build/phpunit.xml
+  - ./vendor/bin/phpunit --configuration ./build/phpunit.xml
