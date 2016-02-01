@@ -24,5 +24,9 @@
   "require": {
     "composer-plugin-api": "^1.0",
     "squizlabs/php_codesniffer": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "composer/composer": "dev-master"
   }
 }
