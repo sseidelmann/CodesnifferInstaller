@@ -1,0 +1,28 @@
+{
+  "name": "sseidelmann/codesniffer-installer",
+  "type": "composer-plugin",
+  "description": "Composer plugin for installing PHP_CodeSniffer standards",
+  "keywords": ["PHP_CodeSniffer", "phpcs", "standards"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sebastian Seidelmann",
+      "email": "sebastian.seidelmann@googlemail.com",
+      "role": "lead"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "Seidelmann\\CodesnifferInstaller": "src/"
+    }
+  },
+  "extra": {
+    "class": [
+      "Seidelmann\\CodesnifferInstaller\\PhpCodesnifferStandardInstallerPlugin"
+    ]
+  },
+  "require": {
+    "composer-plugin-api": "^1.0",
+    "squizlabs/php_codesniffer": "*"
+  }
+}
