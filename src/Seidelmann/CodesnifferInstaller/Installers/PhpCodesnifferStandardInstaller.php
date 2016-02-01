@@ -18,6 +18,12 @@ use Composer\Installer\LibraryInstaller;
 class PhpCodesnifferStandardInstaller extends LibraryInstaller
 {
 	/**
+	 * Defines the package type.
+	 * @var string
+	 */
+	const PACKAGE_TYPE = 'phpcodesniffer-standard';
+
+	/**
 	 * Returns the install path.
 	 * @param PackageInterface $package
 	 * @return string
@@ -56,7 +62,7 @@ class PhpCodesnifferStandardInstaller extends LibraryInstaller
 	 */
 	public function supports($packageType)
 	{
-		return $packageType === 'phpcodesniffer-standard';
+		return $packageType === self::PACKAGE_TYPE;
 	}
 
 }
