@@ -42,7 +42,7 @@ class PhpCodesnifferStandardInstaller extends LibraryInstaller
 	{
 		$this->initializeVendorDir();
 
-		$targetPath = $this->vendorDir ? $this->vendorDir . '/' : '';
+		$targetPath = $this->vendorDir ? $this->vendorDir . DIRECTORY_SEPARATOR : '';
 
 		$codeSnifferStandardsPathParts = array('squizlabs', 'php_codesniffer', 'CodeSniffer', 'Standards');
 		$targetPath .= implode(DIRECTORY_SEPARATOR, $codeSnifferStandardsPathParts) . DIRECTORY_SEPARATOR;
